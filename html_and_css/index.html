@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <style>
+        .Rounded_Corner{
+        border-radius: 12px;
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        }
+        .Background_Picture{
+        background-image: url(PonditLog.png);
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        }
+        .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  
+  .button:hover::before {
+    width: 0;
+    height: 0;
+  }
+  
+  .button span {
+    z-index: 1;
+    position: relative;
+  }
+  .mouse_over{
+        border-radius: 12px;
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+  }
+  .mouse_over:hover{
+    background-color: rgb(206, 108, 28);
+  }
+  /* Mobile */
+  .Mobile_Rounded_Corner{
+        border-radius: 12px;
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        text-decoration: none;
+        }
+        .Mobile_Background_Picture{
+        background-image: url(PonditLog.png);
+        border-radius: 10px;
+        border: none;
+        padding: 30px;
+        text-align: center;
+        }
+        .Mobile_button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        }
+  
+  .Mobile_button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+  
+  .Mobile_button:hover::before {
+    width: 0;
+    height: 0;
+  }
+  
+  .Mobile_button span {
+    z-index: 1;
+    position: relative;
+  }
+  .Mobile_mouse_over{
+        border-radius: 12px;
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        text-decoration: none;
+  }
+  .Mobile_mouse_over:hover{
+    background-color: rgb(206, 108, 28);
+  }
+    </style>
+</head>
+<body>
+    <button>Click Me</button>
+    <div>
+        <p>Desktop Button</p>
+        <button>Desktop Button</button>
+        <p>Button Rounded Corner</p>
+        <button class="Rounded_Corner">Rounded Corner</button>
+        <p>Button Animated</p>
+        <button class="button"><span>Hover Me</span></button>
+        <p>Button Background Picture</p>
+        <button class="Background_Picture">Background Picture</button>
+        <p>Change On Mouse Over</p>
+        <button class="mouse_over">Change On Mouse Over</button>
+        <p>Disable State</p>
+        <button class="disable_state" disabled>Disable State</button>
+    </div>
+    <div>
+        <p>Mobile Button</p>
+        <button>Mobile Button</button>
+        <p>Button Rounded Corner</p>
+        <button class="Mobile_Rounded_Corner">Rounded Corner</button>
+        <p>Button Animated</p>
+        <button class="Mobile_button"><span>Hover Me</span></button>
+        <p>Button Background Picture</p>
+        <button class="Mobile_Background_Picture">Background Picture</button>
+        <p>Change On Mouse Over</p>
+        <button class="Mobile_mouse_over">Change On Mouse Over</button>
+        <p>Disable State</p>
+        <button class="Mobile_disable_state" disabled>Disable State</button>
+    </div>
+    <div>
+        
+    </div>
+</body>
+</html>
